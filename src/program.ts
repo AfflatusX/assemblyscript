@@ -4216,7 +4216,7 @@ export class Class extends TypedElement {
     var typeParameters = prototype.typeParameterNodes;
     if (typeArguments) {
       let numTypeArguments = typeArguments.length;
-      if (!typeParameters || numTypeArguments != typeParameters.length) {
+      if (!typeParameters) {
         throw new Error("type argument count mismatch");
       }
       if (numTypeArguments) {
